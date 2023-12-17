@@ -8,6 +8,10 @@ const config = antfu({
     trailingComma: "always",
   },
 
+  rules: {
+    curly: ["error", "all"],
+  },
+
   // `.eslintignore` is no longer supported in Flat config, use `ignores` instead
   ignores: [
     // "./fixtures",
