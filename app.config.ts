@@ -7,7 +7,7 @@ import {
 
 export default defineAppConfig({
   title: "Matthew Hinton",
-  description: "Developing Business Solutions",
+  description: "Business Solutions Development",
   features: [
     {
       name: "Nuxt 3",

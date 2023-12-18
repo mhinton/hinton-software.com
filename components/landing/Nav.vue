@@ -27,7 +27,7 @@ const mobileMenu = useMobileMenu();
     </div>
     <div class="hidden lg:flex lg:gap-x-12">
       <template v-for="item in navigation" :key="item.title">
-        <VMenus v-if="item.children" :items="item.children" :title="item.title" :to="item.to" />
+        <UiMenus v-if="item.children" :items="item.children" :title="item.title" :to="item.to" />
         <NuxtLink v-else :to="item.to" class="text-2xl font-semibold leading-6 text-gray-900">
           {{ item.title }}
         </NuxtLink>

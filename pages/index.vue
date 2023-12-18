@@ -14,10 +14,6 @@ function contactMeClicked(_event: any) {
   consola.info("open modal");
   contactMeIsOpen.value = true;
 }
-function contactMeClose(_event: any) {
-  consola.info("close modal");
-  contactMeIsOpen.value = false;
-}
 </script>
 
 <template>
@@ -28,6 +24,6 @@ function contactMeClose(_event: any) {
 
     <LandingCta @contact="contactMeClicked" />
 
-    <LandingContactMe :open="contactMeIsOpen" @close="contactMeClose" />
+    <LandingContactMe :open="contactMeIsOpen" @close="contactMeIsOpen = false" />
   </div>
 </template>
