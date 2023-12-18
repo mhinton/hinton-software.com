@@ -48,7 +48,7 @@ function submit() {
             <textarea
               id="contact-description"
               name="description"
-              class="form-input rounded-md w-full"
+              class="form-textarea rounded-md w-full"
             />
           </div>
         </div>
