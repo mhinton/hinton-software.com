@@ -1,30 +1,11 @@
 <script setup lang="ts">
-import type { NavigationItem } from "~~/types";
-
 defineProps<{
   hideHero?: boolean
   hideBg?: boolean
 }>();
 
-const navigation: NavigationItem[] = [
-  { title: "Home", to: "/" },
-  // { title: 'Store', to: '/store' },
-  { title: "Blog", to: "/blog" },
-  // { title: 'Components', to: '/docs/components/autocomplete' },
-  // {
-  //   title: 'Examples',
-  //   children: [
-  //     {
-  //       title: 'Forms',
-  //       to: '/docs/forms',
-  //     },
-  //     {
-  //       title: 'Swiper',
-  //       to: '/docs/swiper',
-  //     },
-  //   ],
-  // },
-];
+const appConfig = useAppConfig();
+const navigation = appConfig.navigation;
 </script>
 
 <template>

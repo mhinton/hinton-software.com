@@ -8,6 +8,25 @@ import {
 export default defineAppConfig({
   title: "Matthew Hinton",
   description: "Business Solutions Development",
+  navigation: [
+    { title: "Home", to: "/" },
+    // { title: 'Store', to: '/store' },
+    { title: "Blog", to: "/blog" },
+    // { title: 'Components', to: '/docs/components/autocomplete' },
+    // {
+    //   title: 'Examples',
+    //   children: [
+    //     {
+    //       title: 'Forms',
+    //       to: '/docs/forms',
+    //     },
+    //     {
+    //       title: 'Swiper',
+    //       to: '/docs/swiper',
+    //     },
+    //   ],
+    // },
+  ],
   features: [
     {
       name: "Nuxt 3",
