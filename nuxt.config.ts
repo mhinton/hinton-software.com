@@ -10,6 +10,7 @@ export default defineNuxtConfig({
     shim: false,
   },
 
+  debug: true,
   devtools: {
     timeline: {
       enabled: true,

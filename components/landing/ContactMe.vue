@@ -26,6 +26,7 @@ function submit() {
               type="text"
               name="name"
               class="form-input rounded-md w-full"
+              autocomplete="off"
             >
           </div>
         </div>
