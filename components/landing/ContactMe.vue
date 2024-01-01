@@ -4,7 +4,6 @@ const emit = defineEmits<{
   close: []
 }>();
 
-const openState = ref(open);
 function closeModal() {
   emit("close");
 }
