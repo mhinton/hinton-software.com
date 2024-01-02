@@ -1,15 +1,15 @@
 <script setup lang="ts">
-const appConfig = useAppConfig();
 const emit = defineEmits<{
-  (event: "contact"): void;
+  (event: "contact"): void
 }>();
+const appConfig = useAppConfig();
 </script>
 
 <template>
   <div class="bg-white">
     <div class="mx-auto max-w-7xl sm:px-6 lg:px-8 my-4">
       <div
-        class="relative isolate overflow-hidden bg-blue-zodiac-800 p-6 shadow-2xl sm:rounded-3xl sm:px-8 sm:py-16 lg:px-16 lg:py-16 lg:flex lg:items-center"
+        class="relative isolate overflow-hidden bg-blue-zodiac-800 p-6 shadow-2xl rounded-3xl sm:px-8 sm:py-16 lg:px-16 lg:py-16 lg:flex lg:items-center"
       >
         <div
           class="flex-col justify-center items-center mx-auto max-w-md text-center lg:mx-0 lg:flex-auto md:flex lg:py-32 lg:text-left"
@@ -56,6 +56,8 @@ const emit = defineEmits<{
           <NuxtImg
             :src="appConfig.cta.image"
             class="max-w-lg rounded-md mx-auto my-0 mx-0"
+            width="512"
+            height="338"
             alt="Laptop slightly opened"
           />
         </div>
