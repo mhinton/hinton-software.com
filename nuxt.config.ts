@@ -4,7 +4,7 @@ export default defineNuxtConfig({
     "@nuxtjs/tailwindcss",
     "nuxt-icon",
     "@nuxt/image",
-    "@nuxt/content"
+    "@nuxt/content",
   ],
 
   typescript: {
@@ -16,6 +16,10 @@ export default defineNuxtConfig({
     timeline: {
       enabled: true,
     },
+  },
+
+  image: {
+    format: ["webp", "jpg"],
   },
 
   vite: {
