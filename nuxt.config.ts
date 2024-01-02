@@ -22,6 +22,15 @@ export default defineNuxtConfig({
     format: ["webp", "jpg"],
   },
 
+  nitro: {
+    prerender: {
+      routes: [
+        "/_ipx/s_512x338/cta-laptop.jpg",
+        // etc.
+      ],
+    },
+  },
+
   vite: {
     vue: {
       script: {
