@@ -85,6 +85,6 @@ export default defineAppConfig({
       // },
     ],
     // image: 'https://tailwindui.com/img/component-images/dark-project-app-screenshot.png',
-    image: "cta-laptop.jpg",
+    image: "/cta-laptop.jpg",
   },
 });
