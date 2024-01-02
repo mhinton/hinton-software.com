@@ -17,6 +17,7 @@ function submit() {
   <div>
     <LandingModal :open="open" @close="closeModal">
       <form name="contact" method="POST" netlify>
+        <input type="hidden" name="form-name" value="contact">
         <div class="my-2">
           <div><label for="name">Name (optional)</label></div>
           <div>
